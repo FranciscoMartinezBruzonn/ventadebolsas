@@ -1,66 +1,98 @@
-body {
-    background-color: #f8f9fa; /* Color de fondo claro */
+/* Estilos personalizados */
+.hero {
+    position: relative;
+    background-image: url('hero-bg.jpg'); /* Añadir una imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
 }
 
-.hero {
-    background: url('hero-background.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    padding: 5rem 0;
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Añadir un overlay oscuro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
 }
 
 .btn-orange {
-    background-color: #ff6f00; /* Naranja brillante */
-    border-color: #ff6f00; /* Naranja brillante */
-    color: #fff; /* Texto blanco para buen contraste */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 0.5rem; /* Bordes redondeados */
-    padding: 0.75rem 1.5rem; /* Padding para un botón más grande */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el botón */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
-    display: inline-block; /* Asegura que el botón no se expanda a todo el ancho */
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 .btn-orange:hover {
-    background-color: #e65c00; /* Naranja más oscuro al pasar el ratón */
-    border-color: #e65c00; /* Naranja más oscuro al pasar el ratón */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
-}
-
-.btn-orange:focus, .btn-orange:active {
-    outline: none; /* Elimina el contorno por defecto al hacer clic o enfocar */
-    box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.5); /* Sombra de enfoque personalizada */
+    background-color: #e65c00;
 }
 
 .card {
-    border: 1px solid #e0e0e0; /* Bordes suaves para las tarjetas */
-    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
     height: 200px;
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionar */
+    object-fit: cover;
 }
 
 .card-body {
-    background-color: #333; /* Fondo oscuro */
-    color: #fff; /* Texto claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 
-.category-products {
-    padding: 2rem 0;
+.card-body .btn {
+    margin-top: auto;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-footer {
-    background-color: #000; /* Negro */
-    color: #fff; /* Texto blanco en el pie de página */
+.card-body .btn:hover {
+    background-color: #e65c00;
 }
 
-a {
-    color: #ff6f00; /* Naranja */
+form .form-label {
+    font-weight: bold;
 }
 
-a:hover {
-    color: #e65c00; /* Naranja más oscuro */
+form .form-control {
+    border-radius: 8px;
+}
+
+form .btn-orange {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form .btn-orange:hover {
+    background-color: #e65c00;
 }

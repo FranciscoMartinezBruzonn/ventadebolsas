@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nombre de la Tienda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet"> <!-- Archivo de estilos opcional -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -13,10 +13,12 @@
 
 <!-- Hero Section -->
 <section class="hero text-center py-5">
-    <div class="container">
-        <h1 class="display-4">Bienvenido a Nuestra Tienda</h1>
-        <p class="lead">Explora nuestros productos y encuentra lo que necesitas.</p>
-        <a href="#categories" class="btn btn-orange btn-lg">Ver Categorías</a>
+    <div class="hero-overlay">
+        <div class="container">
+            <h1 class="display-4">Bienvenido a Nuestra Tienda</h1>
+            <p class="lead">Explora nuestros productos y encuentra lo que necesitas.</p>
+            <a href="#categories" class="btn btn-orange btn-lg">Ver Categorías</a>
+        </div>
     </div>
 </section>
 
@@ -38,7 +40,7 @@
         foreach ($categories as $category) {
             echo '
             <div class="col-md-4 mb-4">
-                <div class="card border-dark">
+                <div class="card border-dark shadow-sm">
                     <img src="' . $category['image'] . '" class="card-img-top" alt="' . $category['name'] . '">
                     <div class="card-body bg-dark text-light">
                         <h5 class="card-title">' . $category['name'] . '</h5>
@@ -69,7 +71,7 @@ foreach ($categories as $category) {
         
         echo '
         <div class="col-md-4 mb-4">
-            <div class="card border-dark">
+            <div class="card border-dark shadow-sm">
                 <img src="product' . $i . '.jpg" class="card-img-top" alt="' . $productName . '">
                 <div class="card-body bg-dark text-light">
                     <h5 class="card-title">' . $productName . '</h5>
