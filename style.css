@@ -1,5 +1,5 @@
 body {
-    background-color: #f8f9fa; /* Color de fondo claro, gris claro */
+    background-color: #f8f9fa; /* Color de fondo claro */
 }
 
 .hero {
@@ -15,9 +15,9 @@ body {
     color: #fff; /* Texto blanco para buen contraste */
     font-weight: bold; /* Texto en negrita */
     border-radius: 0.5rem; /* Bordes redondeados */
-    padding: 0.75rem 1.5rem; /* Mayor padding para botones más grandes */
+    padding: 0.75rem 1.5rem; /* Padding para un botón más grande */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el botón */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Suavizar transición */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
     display: inline-block; /* Asegura que el botón no se expanda a todo el ancho */
     text-decoration: none; /* Elimina el subrayado del enlace */
 }
