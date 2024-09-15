@@ -3,167 +3,21 @@ body {
     background: linear-gradient(135deg, #000000, #ff4000); /* Gradiente diagonal de negro a rojo */
     color: #ea4f0c;
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Tipografía más moderna */
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
     line-height: 1.6;
     scroll-behavior: smooth;
 }
 
-/* Hero Section */
-.hero {
-    background-image: url(representacion-3d-caja-regalo-naranja-lazo-blanco_190619-2682.avif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    color: #fff;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.hero-overlay {
-    background: rgba(11, 6, 3, 0.7); /* Overlay oscuro con más opacidad */
-    padding: 40px;
-    border-radius: 12px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-}
-
-/* Botones */
-.btn-orange {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.btn-orange:hover {
-    background-color: #e65c00;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Secciones con gradiente diagonal */
-section {
-    background: linear-gradient(200deg, #000000, #ff6f00); /* Gradiente diagonal entre negro y rojo */
-    padding: 60px 0;
-    color: #fff;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-/* Cards (Tarjetas de Productos) */
-.card {
-    border: 2px solid #0a0000;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #1a1a1a; /* Color de fondo oscuro para las tarjetas */
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-    height: 250px;
-    object-fit: cover;
-}
-
-.card-body {
-    padding: 20px;
-    color: #fff;
-}
-
-.card-body h5 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.card-body p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-/* Botones en las tarjetas */
-.card-body .btn {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    width: 100%;
-    padding: 12px;
-    text-align: center;
-    font-weight: bold;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-body .btn:hover {
-    background-color: #e65c00;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Formulario de contacto */
-form .form-label {
-    font-weight: bold;
-    color: #fff;
-}
-
-form .form-control {
-    border-radius: 8px;
-    padding: 12px;
-    background-color: #333; /* Fondo oscuro en campos de formulario */
-    color: #fff;
-    border: 1px solid #555;
-}
-
-form .form-control:focus {
-    outline: none;
-    border-color: #ff6600;
-    box-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
-}
-
-form .btn-orange {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    padding: 12px;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-form .btn-orange:hover {
-    background-color: #e65c00;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 /* Header */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.85); /* Fondo oscuro con transparencia */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
     z-index: 1000;
     padding: 15px 0;
+    transition: background 0.3s ease; /* Transición suave */
 }
 
 header .logo {
@@ -203,13 +57,173 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: #ff6600;
-    border-bottom: 2px solid #ff6600; /* Efecto de subrayado al hacer hover */
+    color: #ff6600; /* Color de hover mejorado */
+    border-bottom: 3px solid #ff6600; /* Subrayado más grueso */
+}
+
+/* Hero Section */
+.hero {
+    background-image:url(img1.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Efecto parallax */
+    position: relative;
+    color: #fff;
+    padding: 80px 20px; /* Padding ajustado para pantallas pequeñas */
+    text-align: center;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Overlay oscuro */
+    padding: 40px;
+    border-radius: 15px; /* Bordes más redondeados */
+}
+
+.hero h1 {
+    font-size: 4rem; /* Texto más grande para mayor impacto */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-orange {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 15px 30px; /* Botón más grande */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-orange:hover {
+    background-color: #e65c00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Secciones con franjas diagonales */
+section {
+    background: linear-gradient(200deg, rgba(0, 0, 0, 0.6), rgba(255, 102, 0, 0.6)); /* Franjas más transparentes */
+    padding: 80px 20px;
+    color: #fff;
+    position: relative;
+}
+
+section:not(.no-stripes)::before,
+section:not(.no-stripes)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+}
+
+section h2 {
+    font-size: 3rem; /* Título más prominente */
+    margin-bottom: 40px;
+}
+
+/* Cards (Tarjetas de Productos) */
+.card {
+    border: none; /* Sin borde */
+    border-radius: 16px; /* Bordes más redondeados */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1a1a1a; /* Fondo oscuro */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Escalar tarjeta */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    color: #fff;
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.card-body h5 {
+    font-size: 1.5rem; /* Tamaño de fuente mejorado */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1.1rem; /* Tamaño de fuente mejorado */
+    margin-bottom: 15px; /* Más espacio debajo del párrafo */
+}
+
+/* Botones en las tarjetas */
+.card-body .btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #e65c00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Formulario de contacto */
+form .form-label {
+    font-weight: bold;
+    color: #fff;
+}
+
+form .form-control {
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 12px;
+    background-color: #333; /* Fondo oscuro en campos de formulario */
+    color: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+form .form-control:focus {
+    outline: none;
+    border-color: #ff6600;
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.3); /* Sombra de enfoque */
+}
+
+form .btn-orange {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 15px 25px; /* Botón más grande */
+    font-weight: bold;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .btn-orange:hover {
+    background-color: #e65c00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
 }
 
 /* Footer */
 footer {
-    background-color: #111;
+    background-color: #000;
     color: #fff;
     padding: 60px 20px;
     text-align: center;
@@ -221,9 +235,6 @@ footer {
 footer .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 footer .footer-col {
@@ -265,8 +276,8 @@ footer .social-icons {
 
 footer .social-icons a {
     color: #fff;
-    font-size: 1.5rem;
-    margin: 0 15px;
+    font-size: 1.6rem; /* Tamaño de iconos mejorado */
+    margin: 0 10px; /* Espaciado entre iconos */
     transition: color 0.3s ease;
 }
 
@@ -280,12 +291,37 @@ footer .social-icons a:hover {
         padding: 10px 0;
     }
 
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     header ul li {
-        margin-left: 15px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .card-body h5 {
+        font-size: 1.3rem;
+    }
+
+    .card-body p {
+        font-size: 1rem;
     }
 
     footer {
-        text-align: center;
         flex-direction: column;
     }
 
@@ -294,3 +330,29 @@ footer .social-icons a:hover {
     }
 }
 
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card-body h5 {
+        font-size: 1.1rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
+    .btn-orange {
+        padding: 12px 20px;
+    }
+
+    footer {
+        padding: 40px 10px;
+    }
+}

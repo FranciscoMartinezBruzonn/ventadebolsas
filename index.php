@@ -14,10 +14,51 @@
 <!-- Hero Section -->
 <section class="hero text-center py-5" id="top">
     <div class="hero-overlay">
-        <div class="container">
-            <h1 class="display-4">Impulsamos tus ideas</h1>
-            <p class="lead">Explora nuestros productos y encuentra lo que necesitas.</p>
-            <a href="#categories" class="btn btn-orange btn-lg">Ver Categorías</a>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="display-4">Impulsamos tus ideas</h1>
+                <p class="lead">Explora nuestros productos y encuentra lo que necesitas.</p>
+                <a href="#categories" class="btn btn-orange btn-lg">Ver Categorías</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Carousel Section -->
+<section class="carousel-section py-5">
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img2.png"d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Primera Imagen</h5>
+                        <p>Descripción de la primera imagen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img3.avif" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Segunda Imagen</h5>
+                        <p>Descripción de la segunda imagen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tercera Imagen</h5>
+                        <p>Descripción de la tercera imagen.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </section>
