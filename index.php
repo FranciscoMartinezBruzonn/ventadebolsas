@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nombre de la Tienda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
 <?php include 'header.php'; ?>
 
 <!-- Hero Section -->
-<section class="hero text-center py-5">
+<section class="hero text-center py-5" id="top">
     <div class="hero-overlay">
         <div class="container">
             <h1 class="display-4">Bienvenido a Nuestra Tienda</h1>
@@ -85,6 +85,9 @@ foreach ($categories as $category) {
 
     echo '
             </div>
+            <div class="text-center mt-4">
+                <a href="#top" class="btn btn-orange">Volver al Inicio</a>
+            </div>
         </div>
     </section>';
 }
@@ -123,6 +126,14 @@ foreach ($categories as $category) {
             });
         });
     });
+
+    document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 </script>
 
 <!-- Bootstrap Scripts -->

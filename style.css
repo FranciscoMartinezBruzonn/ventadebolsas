@@ -1,98 +1,296 @@
-/* Estilos personalizados */
+/* Fondo del cuerpo con gradiente diagonal */
+body {
+    background: linear-gradient(135deg, #000000, #ff4000); /* Gradiente diagonal de negro a rojo */
+    color: #ea4f0c;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Tipografía más moderna */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
 .hero {
-    position: relative;
-    background-image: url('hero-bg.jpg'); /* Añadir una imagen de fondo */
-    background-size: cover;
+    background-image: url(representacion-3d-caja-regalo-naranja-lazo-blanco_190619-2682.avif);
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     color: #fff;
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.5); /* Añadir un overlay oscuro */
-    padding: 20px;
-    border-radius: 8px;
+    background: rgba(11, 6, 3, 0.7); /* Overlay oscuro con más opacidad */
+    padding: 40px;
+    border-radius: 12px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
 }
 
+/* Botones */
 .btn-orange {
     background-color: #ff6600;
     color: #fff;
     border: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 .btn-orange:hover {
     background-color: #e65c00;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Secciones con gradiente diagonal */
+section {
+    background: linear-gradient(200deg, #000000, #ff6f00); /* Gradiente diagonal entre negro y rojo */
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Cards (Tarjetas de Productos) */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 2px solid #0a0000;
+    border-radius: 12px;
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1a1a1a; /* Color de fondo oscuro para las tarjetas */
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+    padding: 20px;
+    color: #fff;
 }
 
+.card-body h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Botones en las tarjetas */
 .card-body .btn {
-    margin-top: auto;
     background-color: #ff6600;
     color: #fff;
     border: none;
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-body .btn:hover {
     background-color: #e65c00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Formulario de contacto */
 form .form-label {
     font-weight: bold;
+    color: #fff;
 }
 
 form .form-control {
     border-radius: 8px;
+    padding: 12px;
+    background-color: #333; /* Fondo oscuro en campos de formulario */
+    color: #fff;
+    border: 1px solid #555;
+}
+
+form .form-control:focus {
+    outline: none;
+    border-color: #ff6600;
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
 }
 
 form .btn-orange {
     background-color: #ff6600;
     color: #fff;
     border: none;
-    width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 form .btn-orange:hover {
     background-color: #e65c00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Fondo oscuro con transparencia */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+header .logo {
+    color: #ff6600;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+header ul li a:hover {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600; /* Efecto de subrayado al hacer hover */
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-col {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ff6600;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ff6600;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header ul li {
+        margin-left: 15px;
+    }
+
+    footer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    footer .footer-col {
+        margin-bottom: 20px;
+    }
+}
+
