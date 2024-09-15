@@ -15,7 +15,7 @@
 <section class="hero text-center py-5" id="top">
     <div class="hero-overlay">
         <div class="container">
-            <h1 class="display-4">Bienvenido a Nuestra Tienda</h1>
+            <h1 class="display-4">Impulsamos tus ideas</h1>
             <p class="lead">Explora nuestros productos y encuentra lo que necesitas.</p>
             <a href="#categories" class="btn btn-orange btn-lg">Ver Categorías</a>
         </div>
@@ -29,12 +29,12 @@
         <?php
         // Simulación de categorías
         $categories = [
-            ['id' => 'category1', 'name' => 'Categoría 1', 'image' => 'category1.jpg', 'description' => 'Descripción breve de la categoría.'],
-            ['id' => 'category2', 'name' => 'Categoría 2', 'image' => 'category2.jpg', 'description' => 'Descripción breve de la categoría.'],
-            ['id' => 'category3', 'name' => 'Categoría 3', 'image' => 'category3.jpg', 'description' => 'Descripción breve de la categoría.'],
-            ['id' => 'category4', 'name' => 'Categoría 4', 'image' => 'category4.jpg', 'description' => 'Descripción breve de la categoría.'],
-            ['id' => 'category5', 'name' => 'Categoría 5', 'image' => 'category5.jpg', 'description' => 'Descripción breve de la categoría.'],
-            ['id' => 'category6', 'name' => 'Categoría 6', 'image' => 'category6.jpg', 'description' => 'Descripción breve de la categoría.']
+            ['id' => 'category1', 'name' => 'Bolsas', 'image' => 'category1.jpg', 'description' => 'Descripción breve de la categoría.'],
+            ['id' => 'category2', 'name' => 'Llaveros', 'image' => 'category2.jpg', 'description' => 'Descripción breve de la categoría.'],
+            ['id' => 'category3', 'name' => 'Bolígrafos', 'image' => 'category3.jpg', 'description' => 'Descripción breve de la categoría.'],
+            ['id' => 'category4', 'name' => 'Mugs, botellas y termos', 'image' => 'category4.jpg', 'description' => 'Descripción breve de la categoría.'],
+            ['id' => 'category5', 'name' => 'Lanyards/Identificadores', 'image' => 'category5.jpg', 'description' => 'Descripción breve de la categoría.'],
+            ['id' => 'category6', 'name' => 'Set de regalos', 'image' => 'category6.jpg', 'description' => 'Descripción breve de la categoría.']
         ];
 
         foreach ($categories as $category) {
@@ -120,20 +120,14 @@ foreach ($categories as $category) {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
         });
     });
 
     document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-});
 </script>
 
 <!-- Bootstrap Scripts -->
